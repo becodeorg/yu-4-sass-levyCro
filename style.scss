@@ -97,10 +97,7 @@ body {
         margin-bottom: 0px;
     }
 
-    .message,
-    .success,
-    .error,
-    .warning {
+    .message {
         border: 1px solid #ccc;
         padding: $varpadding;
         margin: 16px;
@@ -109,14 +106,17 @@ body {
     }
 
     .success {
+        @extend .message;
         background-color: green;
     }
 
     .error {
+        @extend .message;
         background-color: red;
     }
 
     .warning {
+        @extend .message;
         background-color: orange;
     }
 }
